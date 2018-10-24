@@ -6,3 +6,6 @@ main.o: main.c
 
 run:
 	./a.out
+
+clean:
+	rm -rf *.o a.out
