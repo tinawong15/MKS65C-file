@@ -4,8 +4,8 @@
 #include <unistd.h>
 
 int main() {
-  int text_file = open("text.txt", O_WRONLY)
+  int text_file = open("text.txt", O_RDWR);
   char * body = calloc(sizeof(char), 100);
-  close(file);
+  close(text_file);
   return 0;
 }
