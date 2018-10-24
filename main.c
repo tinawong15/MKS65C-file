@@ -25,6 +25,8 @@ int main() {
   body = calloc(sizeof(char), 100);
   printf("Bytes read: %zd\n", read(text_file, body, 100));
   printf("%s\n", body);
-
+  free(body);
+  close(text_file);
+  
   return 0;
 }
